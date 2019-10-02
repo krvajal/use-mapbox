@@ -1,11 +1,11 @@
 import * as React from 'react';
 import mapboxgl, { Map } from 'mapbox-gl';
 import { useSubscription } from 'use-subscription';
-
-type Maybe<T> = T | null;
+import invariant from 'tiny-invariant';
 
 export default function useMapbox(containerId: string, config: any = {}) {
   const { accessToken, ...options } = config;
+  invariant(accessToken, 'an accessToken is required');
   const mapRef = React.useRef<Maybe<Map>>(null);
   const [initialized, setInitialized] = React.useState(false);
 
