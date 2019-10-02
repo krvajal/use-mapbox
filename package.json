@@ -37,5 +37,11 @@
     "tsdx": "^0.9.3",
     "tslib": "^1.10.0",
     "typescript": "^3.6.3"
+  },
+  "dependencies": {
+    "@types/mapbox-gl": "^0.54.4",
+    "@types/use-subscription": "^1.0.0",
+    "mapbox-gl": "^1.4.0",
+    "use-subscription": "^1.1.1"
   }
 }
