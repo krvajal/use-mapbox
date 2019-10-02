@@ -1,5 +1,5 @@
 {
-  "name": "use-mapbox",
+  "name": "@krvajal/use-mapbox",
   "version": "0.1.0",
   "main": "dist/index.js",
   "module": "dist/use-mapbox.esm.js",
@@ -37,5 +37,12 @@
     "tsdx": "^0.9.3",
     "tslib": "^1.10.0",
     "typescript": "^3.6.3"
+  },
+  "dependencies": {
+    "@types/mapbox-gl": "^0.54.4",
+    "@types/use-subscription": "^1.0.0",
+    "mapbox-gl": "^1.4.0",
+    "tiny-invariant": "^1.0.6",
+    "use-subscription": "^1.1.1"
   }
 }
